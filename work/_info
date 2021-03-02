@@ -1,0 +1,1137 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/KooKV/OneDrive/Desktop/FinishedALU
+Eadder32bit
+Z1 w1583433446
+Z2 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z3 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
+R0
+Z4 8C:/Users/KooKV/OneDrive/Desktop/FinishedALU/adder32bit.vhd
+Z5 FC:/Users/KooKV/OneDrive/Desktop/FinishedALU/adder32bit.vhd
+l0
+L14
+VmjmFM;FLc[=REBG:SWz8J3
+!s100 ?YHgQFOFO^K5FU>9[EAkN3
+Z6 OP;C;10.4a;61
+32
+Z7 !s110 1585070603
+!i10b 1
+Z8 !s108 1585070603.000000
+Z9 !s90 -reportprogress|300|-work|work|C:/Users/KooKV/OneDrive/Desktop/FinishedALU/adder32bit.vhd|
+Z10 !s107 C:/Users/KooKV/OneDrive/Desktop/FinishedALU/adder32bit.vhd|
+!i113 1
+Z11 o-work work -O0
+Z12 tExplicit 1
+A\I<3Nick\
+R2
+R3
+DEx4 work 10 adder32bit 0 22 mjmFM;FLc[=REBG:SWz8J3
+l48
+L28
+Vg?46HBj9HJ44>K7HRn0^H2
+!s100 8bE29JcJAW6X;NQh3>a]V1
+R6
+32
+R7
+!i10b 1
+R8
+R9
+R10
+!i113 1
+R11
+R12
+Z13 n@134@i@0743@nick@134
+Eaddsub
+Z14 w1585017022
+R2
+R3
+R0
+Z15 8C:/Users/KooKV/OneDrive/Desktop/FinishedALU/AddSub.vhd
+Z16 FC:/Users/KooKV/OneDrive/Desktop/FinishedALU/AddSub.vhd
+l0
+L5
+V;774Y`KbZ2;:UiSLPKzh?1
+!s100 4i6Go0EkOGXaldak`LoHX1
+R6
+32
+R7
+!i10b 1
+R8
+Z17 !s90 -reportprogress|300|-work|work|C:/Users/KooKV/OneDrive/Desktop/FinishedALU/AddSub.vhd|
+Z18 !s107 C:/Users/KooKV/OneDrive/Desktop/FinishedALU/AddSub.vhd|
+!i113 1
+R11
+R12
+A\I<3Nick\
+R2
+R3
+DEx4 work 6 addsub 0 22 ;774Y`KbZ2;:UiSLPKzh?1
+l53
+L19
+VRVCHJ3K3;<dVMCBd]Dl5e3
+!s100 =@W9<^Zcek4:S9OUz=PRd3
+R6
+32
+R7
+!i10b 1
+R8
+R17
+R18
+!i113 1
+R11
+R12
+R13
+Eand_32bit
+Z19 w1584028834
+R2
+R3
+R0
+Z20 8C:/Users/KooKV/OneDrive/Desktop/FinishedALU/and_32bit.vhd
+Z21 FC:/Users/KooKV/OneDrive/Desktop/FinishedALU/and_32bit.vhd
+l0
+L4
+Vn:?hY>3I?gjf7C6GBM3F:1
+!s100 JO[6F58dg0mSMXLX@ah8<0
+R6
+32
+R7
+!i10b 1
+R8
+Z22 !s90 -reportprogress|300|-work|work|C:/Users/KooKV/OneDrive/Desktop/FinishedALU/and_32bit.vhd|
+Z23 !s107 C:/Users/KooKV/OneDrive/Desktop/FinishedALU/and_32bit.vhd|
+!i113 1
+R11
+R12
+Adataflow
+R2
+R3
+DEx4 work 9 and_32bit 0 22 n:?hY>3I?gjf7C6GBM3F:1
+l13
+L12
+V[d>:Pe1<JzEKB3`AS=9Sd1
+!s100 3nY:beL`gC3G805ZeJYeM2
+R6
+32
+R7
+!i10b 1
+R8
+R22
+R23
+!i113 1
+R11
+R12
+Eandg2
+Z24 w1580179928
+R2
+R3
+R0
+Z25 8C:/Users/KooKV/OneDrive/Desktop/FinishedALU/andg2.vhd
+Z26 FC:/Users/KooKV/OneDrive/Desktop/FinishedALU/andg2.vhd
+l0
+L4
+VM5?V]ZIWNAHXkYDAW8h?L2
+!s100 6^SnRHlSGn02YE<K@>4e71
+R6
+32
+R7
+!i10b 1
+R8
+Z27 !s90 -reportprogress|300|-work|work|C:/Users/KooKV/OneDrive/Desktop/FinishedALU/andg2.vhd|
+Z28 !s107 C:/Users/KooKV/OneDrive/Desktop/FinishedALU/andg2.vhd|
+!i113 1
+R11
+R12
+Adataflow
+R2
+R3
+DEx4 work 5 andg2 0 22 M5?V]ZIWNAHXkYDAW8h?L2
+l13
+L12
+Via]mR<VSni^3fe:Oao5Qo1
+!s100 X3_6_mTNlKjTN7QQTeLKC3
+R6
+32
+R7
+!i10b 1
+R8
+R27
+R28
+!i113 1
+R11
+R12
+Ecomplement
+Z29 w1585070190
+R2
+R3
+R0
+Z30 8C:/Users/KooKV/OneDrive/Desktop/FinishedALU/complement.vhd
+Z31 FC:/Users/KooKV/OneDrive/Desktop/FinishedALU/complement.vhd
+l0
+L4
+VRFP=TMi=O3ThQS5ngW>D81
+!s100 R;J]@Xbinm[KMd;Mm>3`G2
+R6
+32
+Z32 !s110 1585070604
+!i10b 1
+R8
+Z33 !s90 -reportprogress|300|-work|work|C:/Users/KooKV/OneDrive/Desktop/FinishedALU/complement.vhd|
+Z34 !s107 C:/Users/KooKV/OneDrive/Desktop/FinishedALU/complement.vhd|
+!i113 1
+R11
+R12
+Astructure
+R2
+R3
+DEx4 work 10 complement 0 22 RFP=TMi=O3ThQS5ngW>D81
+l18
+L11
+VmH^hz;0Hi1jCLWl`ECKZC3
+!s100 C?DXfi=FiGF:J::U5Q=Xa0
+R6
+32
+R32
+!i10b 1
+R8
+R33
+R34
+!i113 1
+R11
+R12
+Econtrollogic
+Z35 w1583430492
+R2
+R3
+R0
+8C:/Users/KooKV/OneDrive/Desktop/FinishedALU/ControlLogic.vhd
+FC:/Users/KooKV/OneDrive/Desktop/FinishedALU/ControlLogic.vhd
+l0
+L4
+VGGX>eBaPEA2iWQfaAH:cR1
+!s100 C8_aMeC76O:FMlRknd2682
+R6
+32
+R32
+!i10b 1
+Z36 !s108 1585070604.000000
+!s90 -reportprogress|300|-work|work|C:/Users/KooKV/OneDrive/Desktop/FinishedALU/ControlLogic.vhd|
+!s107 C:/Users/KooKV/OneDrive/Desktop/FinishedALU/ControlLogic.vhd|
+!i113 1
+R11
+R12
+Edatamemory
+R35
+Z37 DPx4 ieee 11 numeric_std 0 22 :ASDNFgHXf_ih3J@9F3Ze1
+R2
+R3
+R0
+Z38 8C:/Users/KooKV/OneDrive/Desktop/FinishedALU/dataMemory.vhd
+Z39 FC:/Users/KooKV/OneDrive/Desktop/FinishedALU/dataMemory.vhd
+l0
+L8
+VB7g_]_5[iQNBY39CN`iJN1
+!s100 ]CaPo[SPj[BDf=^^bgL;e0
+R6
+32
+R32
+!i10b 1
+R36
+Z40 !s90 -reportprogress|300|-work|work|C:/Users/KooKV/OneDrive/Desktop/FinishedALU/dataMemory.vhd|
+Z41 !s107 C:/Users/KooKV/OneDrive/Desktop/FinishedALU/dataMemory.vhd|
+!i113 1
+R11
+R12
+Artl
+R37
+R2
+R3
+DEx4 work 10 datamemory 0 22 B7g_]_5[iQNBY39CN`iJN1
+l37
+L27
+VmVKX<8l[:4LaK5H]9fFP40
+!s100 gzhVGMkXW4MDClOo;NSFS3
+R6
+32
+R32
+!i10b 1
+R36
+R40
+R41
+!i113 1
+R11
+R12
+Efulladder
+Z42 w1583430420
+R2
+R3
+R0
+Z43 8C:/Users/KooKV/OneDrive/Desktop/FinishedALU/FullAdder.vhd
+Z44 FC:/Users/KooKV/OneDrive/Desktop/FinishedALU/FullAdder.vhd
+l0
+L13
+V`QF4UNmOHh>2ZG@I32F3h2
+!s100 BVFfS>1[=Rb4nc7UMbO>a0
+R6
+32
+R32
+!i10b 1
+R36
+Z45 !s90 -reportprogress|300|-work|work|C:/Users/KooKV/OneDrive/Desktop/FinishedALU/FullAdder.vhd|
+Z46 !s107 C:/Users/KooKV/OneDrive/Desktop/FinishedALU/FullAdder.vhd|
+!i113 1
+R11
+R12
+A\I<3Nick\
+R2
+R3
+DEx4 work 9 fulladder 0 22 `QF4UNmOHh>2ZG@I32F3h2
+l27
+L26
+V?:1RcIf?7Og?hJZ9OaEFQ2
+!s100 =nfMLRJE9?n?c8b9FEIgT1
+R6
+32
+R32
+!i10b 1
+R36
+R45
+R46
+!i113 1
+R11
+R12
+R13
+Einstructionmemory
+R35
+R37
+R2
+R3
+R0
+Z47 8C:/Users/KooKV/OneDrive/Desktop/FinishedALU/instructionMemory.vhd
+Z48 FC:/Users/KooKV/OneDrive/Desktop/FinishedALU/instructionMemory.vhd
+l0
+L8
+Vh>7IlRj6b7F2c2SWWBb@c3
+!s100 cOPRQ1AObknYU>V3zbT;m1
+R6
+32
+R32
+!i10b 1
+R36
+Z49 !s90 -reportprogress|300|-work|work|C:/Users/KooKV/OneDrive/Desktop/FinishedALU/instructionMemory.vhd|
+Z50 !s107 C:/Users/KooKV/OneDrive/Desktop/FinishedALU/instructionMemory.vhd|
+!i113 1
+R11
+R12
+Artl
+R37
+R2
+R3
+DEx4 work 17 instructionmemory 0 22 h>7IlRj6b7F2c2SWWBb@c3
+l37
+L27
+V0HYP6ncN72TJ=`<fbDS6T1
+!s100 SSXSfA9F^OcF`Z=JnAQ1E1
+R6
+32
+R32
+!i10b 1
+R36
+R49
+R50
+!i113 1
+R11
+R12
+Einvg
+Z51 w1585069720
+R2
+R3
+R0
+Z52 8C:/Users/KooKV/OneDrive/Desktop/FinishedALU/invg.vhd
+Z53 FC:/Users/KooKV/OneDrive/Desktop/FinishedALU/invg.vhd
+l0
+L23
+V1_]Wn`]5f;JVHKiD9[c>i1
+!s100 _XK?_^5z0Rm1<k12?;5R?2
+R6
+32
+R32
+!i10b 1
+R36
+Z54 !s90 -reportprogress|300|-work|work|C:/Users/KooKV/OneDrive/Desktop/FinishedALU/invg.vhd|
+Z55 !s107 C:/Users/KooKV/OneDrive/Desktop/FinishedALU/invg.vhd|
+!i113 1
+R11
+R12
+Adataflow
+R2
+R3
+DEx4 work 4 invg 0 22 1_]Wn`]5f;JVHKiD9[c>i1
+l31
+L30
+V8B]MHoUcDFKI2<coS@dii1
+!s100 bk7I76o8e1LURdoZEQb8H0
+R6
+32
+R32
+!i10b 1
+R36
+R54
+R55
+!i113 1
+R11
+R12
+Emux2t1_32
+Z56 w1584031618
+R2
+R3
+R0
+Z57 8C:/Users/KooKV/OneDrive/Desktop/FinishedALU/mux2t1_32.vhd
+Z58 FC:/Users/KooKV/OneDrive/Desktop/FinishedALU/mux2t1_32.vhd
+l0
+L21
+VN3;QI:lz0BlQZ;_[4M1^[3
+!s100 @;JZEHddL?NmbfT7G0g6?1
+R6
+32
+R32
+!i10b 1
+R36
+Z59 !s90 -reportprogress|300|-work|work|C:/Users/KooKV/OneDrive/Desktop/FinishedALU/mux2t1_32.vhd|
+Z60 !s107 C:/Users/KooKV/OneDrive/Desktop/FinishedALU/mux2t1_32.vhd|
+!i113 1
+R11
+R12
+Astructural
+R2
+R3
+DEx4 work 9 mux2t1_32 0 22 N3;QI:lz0BlQZ;_[4M1^[3
+l39
+L30
+VU`b22OTAHGiJkFzTmYd=l3
+!s100 h=N<m7;o749SzP_ScZ9XS2
+R6
+32
+R32
+!i10b 1
+R36
+R59
+R60
+!i113 1
+R11
+R12
+Emux2t1_n
+Z61 w1585018158
+R2
+R3
+R0
+Z62 8C:/Users/KooKV/OneDrive/Desktop/FinishedALU/mux2t1_N.vhd
+Z63 FC:/Users/KooKV/OneDrive/Desktop/FinishedALU/mux2t1_N.vhd
+l0
+L21
+VhF`5`V7ZgX]ccB`5nKLP=3
+!s100 BKZeKCAB2i6lge3>7TA3d3
+R6
+32
+R32
+!i10b 1
+R36
+Z64 !s90 -reportprogress|300|-work|work|C:/Users/KooKV/OneDrive/Desktop/FinishedALU/mux2t1_N.vhd|
+Z65 !s107 C:/Users/KooKV/OneDrive/Desktop/FinishedALU/mux2t1_N.vhd|
+!i113 1
+R11
+R12
+Astructural
+R2
+R3
+DEx4 work 8 mux2t1_n 0 22 hF`5`V7ZgX]ccB`5nKLP=3
+l39
+L30
+VOi1@RHGjQj^a8JGPRA46i0
+!s100 1;`6kLRf?W2WAJYC<f3UZ3
+R6
+32
+R32
+!i10b 1
+R36
+R64
+R65
+!i113 1
+R11
+R12
+Emux2to1
+Z66 w1585070299
+R2
+R3
+R0
+Z67 8C:/Users/KooKV/OneDrive/Desktop/FinishedALU/mux2to1.vhd
+Z68 FC:/Users/KooKV/OneDrive/Desktop/FinishedALU/mux2to1.vhd
+l0
+L5
+VZl:`NIBDaIDbz8oDc4lL`2
+!s100 RXaEf]6X[Xg:<OLhU3Y9:1
+R6
+32
+R32
+!i10b 1
+R36
+Z69 !s90 -reportprogress|300|-work|work|C:/Users/KooKV/OneDrive/Desktop/FinishedALU/mux2to1.vhd|
+Z70 !s107 C:/Users/KooKV/OneDrive/Desktop/FinishedALU/mux2to1.vhd|
+!i113 1
+R11
+R12
+Astructure
+R2
+R3
+DEx4 work 7 mux2to1 0 22 Zl:`NIBDaIDbz8oDc4lL`2
+l43
+L14
+Vd^M51_<c[XNCXoIF8`NW]0
+!s100 fNP9]jmM@[U@n34Of?Zom0
+R6
+32
+R32
+!i10b 1
+R36
+R69
+R70
+!i113 1
+R11
+R12
+Enot_32bit
+Z71 w1585015518
+R2
+R3
+R0
+Z72 8C:/Users/KooKV/OneDrive/Desktop/FinishedALU/not_32bit.vhd
+Z73 FC:/Users/KooKV/OneDrive/Desktop/FinishedALU/not_32bit.vhd
+l0
+L4
+VWiKU`0=U]jNM8faFQlTZ03
+!s100 T]oOA:c@m67a1AzZeHn?33
+R6
+32
+R32
+!i10b 1
+R36
+Z74 !s90 -reportprogress|300|-work|work|C:/Users/KooKV/OneDrive/Desktop/FinishedALU/not_32bit.vhd|
+Z75 !s107 C:/Users/KooKV/OneDrive/Desktop/FinishedALU/not_32bit.vhd|
+!i113 1
+R11
+R12
+Adataflow
+R2
+R3
+DEx4 work 9 not_32bit 0 22 WiKU`0=U]jNM8faFQlTZ03
+l12
+L11
+V:K20`Fd8F@HJOol[^A10E2
+!s100 A:@QG@eR<flm<CL0naDCF2
+R6
+32
+R32
+!i10b 1
+R36
+R74
+R75
+!i113 1
+R11
+R12
+Eoneto32bit
+Z76 w1585016912
+R2
+R3
+R0
+Z77 8C:/Users/KooKV/OneDrive/Desktop/FinishedALU/oneto32bit.vhd
+Z78 FC:/Users/KooKV/OneDrive/Desktop/FinishedALU/oneto32bit.vhd
+l0
+L5
+VPe<33nVWh?39RI>4J:Ydj2
+!s100 ;gKH<mLZV3dS@P40Hn2eF1
+R6
+32
+R32
+!i10b 1
+R36
+Z79 !s90 -reportprogress|300|-work|work|C:/Users/KooKV/OneDrive/Desktop/FinishedALU/oneto32bit.vhd|
+Z80 !s107 C:/Users/KooKV/OneDrive/Desktop/FinishedALU/oneto32bit.vhd|
+!i113 1
+R11
+R12
+Astructure
+R2
+R3
+DEx4 work 10 oneto32bit 0 22 Pe<33nVWh?39RI>4J:Ydj2
+l14
+L12
+VSoMWc_ZQH5keG`f6Ec>iK3
+!s100 Q2;RFXUkm7oIliZHE_OzK1
+R6
+32
+R32
+!i10b 1
+R36
+R79
+R80
+!i113 1
+R11
+R12
+Eor_32bit
+Z81 w1585015480
+R2
+R3
+R0
+Z82 8C:/Users/KooKV/OneDrive/Desktop/FinishedALU/or_32bit.vhd
+Z83 FC:/Users/KooKV/OneDrive/Desktop/FinishedALU/or_32bit.vhd
+l0
+L4
+VUJCC:glcGaIAR_<gQfTPA3
+!s100 _^270@>ziBK8TS<`3?U:g2
+R6
+32
+Z84 !s110 1585070605
+!i10b 1
+R36
+Z85 !s90 -reportprogress|300|-work|work|C:/Users/KooKV/OneDrive/Desktop/FinishedALU/or_32bit.vhd|
+Z86 !s107 C:/Users/KooKV/OneDrive/Desktop/FinishedALU/or_32bit.vhd|
+!i113 1
+R11
+R12
+Adataflow
+R2
+R3
+DEx4 work 8 or_32bit 0 22 UJCC:glcGaIAR_<gQfTPA3
+l13
+L12
+V9@9l]hNSz7Yo^?NR5Ci`o0
+!s100 ^zMS?9GO;kC]6I_EFXX:P3
+R6
+32
+R84
+!i10b 1
+R36
+R85
+R86
+!i113 1
+R11
+R12
+Eorg2
+R51
+R2
+R3
+R0
+Z87 8C:/Users/KooKV/OneDrive/Desktop/FinishedALU/org2.vhd
+Z88 FC:/Users/KooKV/OneDrive/Desktop/FinishedALU/org2.vhd
+l0
+L23
+VJRk_J;=P2[3FhjKXmTI_61
+!s100 bGQ1F9eW^Q17OoL9h4g7z2
+R6
+32
+R84
+!i10b 1
+Z89 !s108 1585070605.000000
+Z90 !s90 -reportprogress|300|-work|work|C:/Users/KooKV/OneDrive/Desktop/FinishedALU/org2.vhd|
+Z91 !s107 C:/Users/KooKV/OneDrive/Desktop/FinishedALU/org2.vhd|
+!i113 1
+R11
+R12
+Adataflow
+R2
+R3
+DEx4 work 4 org2 0 22 JRk_J;=P2[3FhjKXmTI_61
+l32
+L31
+V[d?3d16EeHadTLlcll1cS1
+!s100 h5_AzR3TdRA0a_K=dQ>mI2
+R6
+32
+R84
+!i10b 1
+R89
+R90
+R91
+!i113 1
+R11
+R12
+Eprocessoralu
+Z92 w1585071231
+R37
+R2
+R3
+R0
+Z93 8C:/Users/KooKV/OneDrive/Desktop/FinishedALU/ProcessorALU.vhd
+Z94 FC:/Users/KooKV/OneDrive/Desktop/FinishedALU/ProcessorALU.vhd
+l0
+L5
+V1[`LZ[2K@7emzmT05J[`g1
+!s100 b03EA2R>zQX0hO=^oP6WT1
+R6
+32
+Z95 !s110 1585071238
+!i10b 1
+Z96 !s108 1585071238.000000
+Z97 !s90 -reportprogress|300|-work|work|-O0|C:/Users/KooKV/OneDrive/Desktop/FinishedALU/ProcessorALU.vhd|
+Z98 !s107 C:/Users/KooKV/OneDrive/Desktop/FinishedALU/ProcessorALU.vhd|
+!i113 1
+R11
+R12
+Astructural
+R37
+R2
+R3
+Z99 DEx4 work 12 processoralu 0 22 1[`LZ[2K@7emzmT05J[`g1
+l155
+L24
+V_UNWle2O>l><WDHWW3Leg0
+!s100 30HohK6@S3@D0XVc^<h[e3
+R6
+32
+R95
+!i10b 1
+R96
+R97
+R98
+!i113 1
+R11
+R12
+Eprogramcountregister
+R35
+R2
+R3
+R0
+Z100 8C:/Users/KooKV/OneDrive/Desktop/FinishedALU/programCountRegister.vhd
+Z101 FC:/Users/KooKV/OneDrive/Desktop/FinishedALU/programCountRegister.vhd
+l0
+L14
+VW^N2T6EhI0GRN[A7lR3>b2
+!s100 f@JD;P25:P:`3^c0PYgU22
+R6
+32
+R84
+!i10b 1
+R89
+Z102 !s90 -reportprogress|30|-work|work|C:/Users/KooKV/OneDrive/Desktop/FinishedALU/programCountRegister.vhd|
+Z103 !s107 C:/Users/KooKV/OneDrive/Desktop/FinishedALU/programCountRegister.vhd|
+!i113 1
+R11
+R12
+A\I<3Nick\
+R2
+R3
+DEx4 work 20 programcountregister 0 22 W^N2T6EhI0GRN[A7lR3>b2
+l46
+L28
+VBB@nY4aI[ne=48nHU``V[0
+!s100 C4MZH]_i4l0P^L6`V`JH32
+R6
+32
+R84
+!i10b 1
+R89
+R102
+R103
+!i113 1
+R11
+R12
+R13
+Eripple_adder
+R42
+R2
+R3
+R0
+Z104 8C:/Users/KooKV/OneDrive/Desktop/FinishedALU/RippleAdder.vhd
+Z105 FC:/Users/KooKV/OneDrive/Desktop/FinishedALU/RippleAdder.vhd
+l0
+L14
+V9m]06n<a9;U:_o9RF[2o80
+!s100 PTeHhN68=jcRFHWHf8m:f0
+R6
+32
+R84
+!i10b 1
+R89
+Z106 !s90 -reportprogress|30|-work|work|C:/Users/KooKV/OneDrive/Desktop/FinishedALU/RippleAdder.vhd|
+Z107 !s107 C:/Users/KooKV/OneDrive/Desktop/FinishedALU/RippleAdder.vhd|
+!i113 1
+R11
+R12
+A\I<3Nick\
+R2
+R3
+DEx4 work 12 ripple_adder 0 22 9m]06n<a9;U:_o9RF[2o80
+l48
+L28
+V2d0::i`?=M@Qd1PVg`D?>2
+!s100 :K]hfi6UC4gE1;C2SITZH1
+R6
+32
+R84
+!i10b 1
+R89
+R106
+R107
+!i113 1
+R11
+R12
+R13
+Eshift32_left
+Z108 w1583432236
+R2
+R3
+R0
+Z109 8C:/Users/KooKV/OneDrive/Desktop/FinishedALU/shift32_left.vhd
+Z110 FC:/Users/KooKV/OneDrive/Desktop/FinishedALU/shift32_left.vhd
+l0
+L5
+V[@lJkhROeLnEcI?jO326D0
+!s100 cdhX0kgmoVogQ`0kb1Bj83
+R6
+32
+R84
+!i10b 1
+R89
+Z111 !s90 -reportprogress|30|-work|work|C:/Users/KooKV/OneDrive/Desktop/FinishedALU/shift32_left.vhd|
+Z112 !s107 C:/Users/KooKV/OneDrive/Desktop/FinishedALU/shift32_left.vhd|
+!i113 1
+R11
+R12
+Ashift32_left
+R2
+R3
+DEx4 work 12 shift32_left 0 22 [@lJkhROeLnEcI?jO326D0
+l13
+L12
+VN43MaOEdQImGW9zE<6[1T3
+!s100 ]9_i9P63d5Ha87V9WBoXY3
+R6
+32
+R84
+!i10b 1
+R89
+R111
+R112
+!i113 1
+R11
+R12
+Eshift32_right
+Z113 w1583427918
+R2
+R3
+R0
+Z114 8C:/Users/KooKV/OneDrive/Desktop/FinishedALU/shift32_right.vhd
+Z115 FC:/Users/KooKV/OneDrive/Desktop/FinishedALU/shift32_right.vhd
+l0
+L7
+VO:i775hSPG]KAKE8>KaYn0
+!s100 @gcaSCoND`9i9c<nLNz0Y2
+R6
+32
+R84
+!i10b 1
+R89
+Z116 !s90 -reportprogress|30|-work|work|C:/Users/KooKV/OneDrive/Desktop/FinishedALU/shift32_right.vhd|
+Z117 !s107 C:/Users/KooKV/OneDrive/Desktop/FinishedALU/shift32_right.vhd|
+!i113 1
+R11
+R12
+Ashift32_right
+R2
+R3
+DEx4 work 13 shift32_right 0 22 O:i775hSPG]KAKE8>KaYn0
+l15
+L14
+VgQN8Qkz>S01Q`Lg7k=WiM0
+!s100 19Z<PgDZkIUUh`U6Ik6;o0
+R6
+32
+R84
+!i10b 1
+R89
+R116
+R117
+!i113 1
+R11
+R12
+Eshift32ar_right
+Z118 w1583426932
+R2
+R3
+R0
+Z119 8C:/Users/KooKV/OneDrive/Desktop/FinishedALU/shift32ar_right.vhd
+Z120 FC:/Users/KooKV/OneDrive/Desktop/FinishedALU/shift32ar_right.vhd
+l0
+L6
+VXVYn4iKb9[Y;`Yl3;jLjg2
+!s100 d21P?gYRL9COi]<XHcIK82
+R6
+32
+R84
+!i10b 1
+R89
+Z121 !s90 -reportprogress|30|-work|work|C:/Users/KooKV/OneDrive/Desktop/FinishedALU/shift32ar_right.vhd|
+Z122 !s107 C:/Users/KooKV/OneDrive/Desktop/FinishedALU/shift32ar_right.vhd|
+!i113 1
+R11
+R12
+Ashift32ar_right
+R2
+R3
+DEx4 work 15 shift32ar_right 0 22 XVYn4iKb9[Y;`Yl3;jLjg2
+l15
+L13
+Ve8Cm01@L9KJzoBHeT9^7D3
+!s100 A>_K2OFmiCKik`UF4Zo^T0
+R6
+32
+R84
+!i10b 1
+R89
+R121
+R122
+!i113 1
+R11
+R12
+Esignbit
+Z123 w1585012270
+R2
+R3
+R0
+Z124 8C:/Users/KooKV/OneDrive/Desktop/FinishedALU/signBit.vhd
+Z125 FC:/Users/KooKV/OneDrive/Desktop/FinishedALU/signBit.vhd
+l0
+L5
+VXjnG`ekF7QnAz>B2iXW9V0
+!s100 ]9M[:gmocFI>cf<Dnn_RI3
+R6
+32
+R84
+!i10b 1
+R89
+Z126 !s90 -reportprogress|30|-work|work|C:/Users/KooKV/OneDrive/Desktop/FinishedALU/signBit.vhd|
+Z127 !s107 C:/Users/KooKV/OneDrive/Desktop/FinishedALU/signBit.vhd|
+!i113 1
+R11
+R12
+Astructure
+R2
+R3
+DEx4 work 7 signbit 0 22 XjnG`ekF7QnAz>B2iXW9V0
+l14
+L12
+V[[gU78e9d2LFLALQ0Ll:j2
+!s100 EJ1<[F]3fZ_;::k[d2h5^1
+R6
+32
+R84
+!i10b 1
+R89
+R126
+R127
+!i113 1
+R11
+R12
+Esignextender
+R35
+R37
+R2
+R3
+R0
+Z128 8C:/Users/KooKV/OneDrive/Desktop/FinishedALU/signExtender.vhd
+Z129 FC:/Users/KooKV/OneDrive/Desktop/FinishedALU/signExtender.vhd
+l0
+L5
+VTUIXS9d>4D:Al3[ZEWihS3
+!s100 ?gg<J;4E9NAZ14hRlk15T1
+R6
+32
+R84
+!i10b 1
+R89
+Z130 !s90 -reportprogress|30|-work|work|C:/Users/KooKV/OneDrive/Desktop/FinishedALU/signExtender.vhd|
+Z131 !s107 C:/Users/KooKV/OneDrive/Desktop/FinishedALU/signExtender.vhd|
+!i113 1
+R11
+R12
+A\I<3NickMore\
+R37
+R2
+R3
+DEx4 work 12 signextender 0 22 TUIXS9d>4D:Al3[ZEWihS3
+l13
+L11
+VZdNmn7Pkz>X5dcNOYFhdo0
+!s100 BJZ^4]FM;5giklh7Z5e^93
+R6
+32
+R84
+!i10b 1
+R89
+R130
+R131
+!i113 1
+R11
+R12
+n@134@i@0743@nick@more@134
+Esingleand
+R35
+R2
+R3
+R0
+Z132 8C:/Users/KooKV/OneDrive/Desktop/FinishedALU/singleAnd.vhd
+Z133 FC:/Users/KooKV/OneDrive/Desktop/FinishedALU/singleAnd.vhd
+l0
+L23
+V@eGR]]3hh_W?2iEle2?PF1
+!s100 kR?5UW:P]dKGH:3P=?ShM2
+R6
+32
+R84
+!i10b 1
+R89
+Z134 !s90 -reportprogress|30|-work|work|C:/Users/KooKV/OneDrive/Desktop/FinishedALU/singleAnd.vhd|
+Z135 !s107 C:/Users/KooKV/OneDrive/Desktop/FinishedALU/singleAnd.vhd|
+!i113 1
+R11
+R12
+Adataflow
+R2
+R3
+DEx4 work 9 singleand 0 22 @eGR]]3hh_W?2iEle2?PF1
+l32
+L31
+Vn7`OMY;CBnnmlIhzWQCIf2
+!s100 oIfkbnmW==]DaBP1M`iT20
+R6
+32
+R84
+!i10b 1
+R89
+R134
+R135
+!i113 1
+R11
+R12
+Esinglenot
+R35
+R2
+R3
+R0
+Z136 8C:/Users/KooKV/OneDrive/Desktop/FinishedALU/singleNot.vhd
+Z137 FC:/Users/KooKV/OneDrive/Desktop/FinishedALU/singleNot.vhd
+l0
+L23
+VFEXLD=_AFQ`[f17UX>QQX0
+!s100 gBf:bzBA^dEdiW7lAe1GQ3
+R6
+32
+R84
+!i10b 1
+R89
+Z138 !s90 -reportprogress|30|-work|work|C:/Users/KooKV/OneDrive/Desktop/FinishedALU/singleNot.vhd|
+Z139 !s107 C:/Users/KooKV/OneDrive/Desktop/FinishedALU/singleNot.vhd|
+!i113 1
+R11
+R12
+Adataflow
+R2
+R3
+DEx4 work 9 singlenot 0 22 FEXLD=_AFQ`[f17UX>QQX0
+l31
+L30
+VBHnPIVn@D5YP=L?IlkMC]3
+!s100 AzDafV:S:04>6KV92izf23
+R6
+32
+R84
+!i10b 1
+R89
+R138
+R139
+!i113 1
+R11
+R12
+Exor_32bit
+Z140 w1584028890
+R2
+R3
+R0
+Z141 8C:/Users/KooKV/OneDrive/Desktop/FinishedALU/xor_32bit.vhd
+Z142 FC:/Users/KooKV/OneDrive/Desktop/FinishedALU/xor_32bit.vhd
+l0
+L4
+VM9iJBQ<On@b3bii<ZnA443
+!s100 LBDN@fL=0CZUJ;HdAZgg00
+R6
+32
+R84
+!i10b 1
+R89
+Z143 !s90 -reportprogress|30|-work|work|C:/Users/KooKV/OneDrive/Desktop/FinishedALU/xor_32bit.vhd|
+Z144 !s107 C:/Users/KooKV/OneDrive/Desktop/FinishedALU/xor_32bit.vhd|
+!i113 1
+R11
+R12
+Adataflow
+R2
+R3
+DEx4 work 9 xor_32bit 0 22 M9iJBQ<On@b3bii<ZnA443
+l13
+L12
+V^PZ;TmL_JJiaKj3m:VgXl0
+!s100 9i?JZ8i5DejGKOTjaKgQ51
+R6
+32
+R84
+!i10b 1
+R89
+R143
+R144
+!i113 1
+R11
+R12
+Exorg2
+Z145 w1583887084
+R2
+R3
+R0
+Z146 8C:/Users/KooKV/OneDrive/Desktop/FinishedALU/xorg2.vhd
+Z147 FC:/Users/KooKV/OneDrive/Desktop/FinishedALU/xorg2.vhd
+l0
+L23
+VK@e^LV@NIoQEFG<>mYGML0
+!s100 [hI[mXFH4_j16U;>U1Lfn2
+R6
+32
+Z148 !s110 1585070606
+!i10b 1
+R89
+Z149 !s90 -reportprogress|30|-work|work|C:/Users/KooKV/OneDrive/Desktop/FinishedALU/xorg2.vhd|
+Z150 !s107 C:/Users/KooKV/OneDrive/Desktop/FinishedALU/xorg2.vhd|
+!i113 1
+R11
+R12
+Adataflow
+R2
+R3
+DEx4 work 5 xorg2 0 22 K@e^LV@NIoQEFG<>mYGML0
+l32
+L31
+VNhjJam]<eOn>h_SB`YlEa0
+!s100 Z6[FAPS4fBLB`F?OO<AY72
+R6
+32
+R148
+!i10b 1
+R89
+R149
+R150
+!i113 1
+R11
+R12

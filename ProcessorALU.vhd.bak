@@ -1,0 +1,325 @@
+library ieee;
+use ieee.std_logic_1164.all;
+use ieee.numeric_std.all;
+
+entity ProcessorALU is
+
+	generic 
+	(
+		lui_shift : integer := 16;
+		N		  : integer := 32
+	);
+
+	port(
+	i_vector 	: in std_logic_vector(3 downto 0);
+	i_A			: in std_logic_vector(31 downto 0);
+	i_B			: in std_logic_vector(31 downto 0);
+	o_O_F		: out std_logic_vector(31 downto 0);
+	o_overflow  : out std_logic
+	);
+end ProcessorALU;
+
+architecture structural of ProcessorALU is
+
+		component and_32bit
+    port(
+         i_and_A : in std_logic_vector(31 downto 0);
+         i_and_B : in std_logic_vector(31 downto 0);
+         o_and_F : out std_logic_vector(31 downto 0));
+  end component;
+	
+		component or_32bit
+    port(
+         i_or_A : in std_logic_vector(31 downto 0);
+         i_or_B : in std_logic_vector(31 downto 0);
+         o_or_F : out std_logic_vector(31 downto 0));
+  end component;
+	
+	    component not_32bit
+    port(
+         i_not_A : in std_logic_vector(31 downto 0);
+         o_not_F : out std_logic_vector(31 downto 0));
+  end component;
+	
+		component xor_32bit
+    port(
+         i_xor_A : in std_logic_vector(31 downto 0);
+         i_xor_B : in std_logic_vector(31 downto 0);
+         o_xor_F : out std_logic_vector(31 downto 0));
+  end component;
+	
+		component shift32_left
+    port(
+		i_barll : in STD_LOGIC_VECTOR(31 downto 0);
+		i_swll  : in STD_LOGIC_VECTOR(31 downto 0);
+		o_barll : out STD_LOGIC_VECTOR(31 downto 0));
+  end component;
+
+		component shift32_right
+    port(
+		i_barlr : in STD_LOGIC_VECTOR(31 downto 0);
+		i_swlr  : in STD_LOGIC_VECTOR(31 downto 0);
+		o_barlr : out STD_LOGIC_VECTOR(31 downto 0));
+  end component;
+  
+  		component shift32ar_right
+    port(
+		i_barar : in STD_LOGIC_VECTOR(31 downto 0);
+		i_swar  : in STD_LOGIC_VECTOR(31 downto 0);
+		o_barar : out STD_LOGIC_VECTOR(31 downto 0));
+  end component;
+  
+		component AddSub 
+	port(
+		--Inputs
+		i_D_0	:in std_logic_vector (N-1 downto 0);
+		i_D_1	:in std_logic_vector (N-1 downto 0);
+		i_S_Sub	:in std_logic;
+		
+		--Outputs
+		o_D_Sum :out std_logic_vector (N-1 downto 0);
+		o_D_Cout:out std_logic);
+  
+	end component;
+  
+    	component mux2t1_32
+    port(
+	   i_S          : in std_logic;
+       i_D0         : in std_logic_vector(N-1 downto 0);
+       i_D1         : in std_logic_vector(N-1 downto 0);
+       o_O          : out std_logic_vector(N-1 downto 0));
+  end component;
+
+
+	signal s_OR_F 		: std_logic_vector(N-1 downto 0);
+	signal s_SLL16_barll: std_logic_vector(N-1 downto 0);
+	signal s_XOR_F		: std_logic_vector(N-1 downto 0);
+	signal s_AND_F		: std_logic_vector(N-1 downto 0);
+	signal s_SRL_barlr	: std_logic_vector(N-1 downto 0);
+	signal s_SUB_D_Sum	: std_logic_vector(N-1 downto 0);			-- changed from 2
+	signal s_SUB_D_Cout	: std_logic;
+	signal s_SUB_switch : std_logic;
+	signal s_ADDSUB_D_S : std_logic_vector(N-1 downto 0);			-- changed from 2
+	signal s_ADDSUB_D_C : std_logic;
+	signal s_SLL_barll  : std_logic_vector(N-1 downto 0);
+	signal s_SRA_barar	: std_logic_vector(N-1 downto 0);
+	
+	signal s_OR_F_invert: std_logic_vector(N-1 downto 0);
+	signal s_MUX0_0		: std_logic_vector(N-1 downto 0);
+	signal s_MUX1_0		: std_logic_vector(N-1 downto 0);
+	signal s_SUB_sign_b : std_logic_vector(N-1 downto 0);
+	signal s_SUB_or		: std_logic_vector(N-1 downto 0);
+	signal s_SUB_not	: std_logic_vector(N-1 downto 0);
+	signal s_MUX2_0		: std_logic_vector(N-1 downto 0);
+	
+	signal s_MUX0_1		: std_logic_vector(N-1 downto 0);
+	signal s_MUX1_1		: std_logic_vector(N-1 downto 0);
+	signal s_MUX2_1		: std_logic_vector(N-1 downto 0);
+	signal s_MUX3_1		: std_logic_vector(N-1 downto 0);
+	
+	signal s_MUX0_2		: std_logic_vector(N-1 downto 0);
+	signal s_MUX1_2		: std_logic_vector(N-1 downto 0);
+	signal s_MUX1_F		: std_logic_vector(N-1 downto 0);
+	
+	begin
+
+
+	
+-- OR command to MUX0_0 
+ OR_command : or_32bit
+    port map(
+        i_or_A		=> i_A,
+        i_or_B     	=> i_B,
+        o_or_F     	=> s_OR_F
+    );
+
+ OR_invert : not_32bit
+	port map(
+        i_not_A	=> s_OR_F,
+        o_not_F	=> s_OR_F_invert
+    );
+	
+	
+-- SLL command to MUX0_1
+  SLL_command : shift32_left
+	port map(
+		i_barll => i_A,
+		i_swll  => "00000000000000000000000000001111",					-- TEST THIS MOTHER FUCKER (Shifts 16)
+		o_barll => s_SLL16_barll
+	);
+
+
+-- XOR command to MUX1_0
+ XOR_command : xor_32bit
+    port map(
+        i_xor_A		=> i_A,
+        i_xor_B    	=> i_B,
+        o_xor_F    	=> s_XOR_F
+    );
+
+-- AND command to MUX1_0
+ AND_command : and_32bit
+    port map(
+        i_and_A		=> i_A,
+        i_and_B    	=> i_B,
+        o_and_F    	=> s_AND_F
+    );	
+
+-- SRL command to MUX1_1
+  SRL_command : shift32_right
+	port map(
+		i_barlr => i_A,
+		i_swlr  => i_B,
+		o_barlr => s_SRL_barlr
+	);
+
+-- SUB command to MUX2_0
+--  SUB_command	:	AddSub
+--	port map(
+--		--Inputs
+--		i_D_0	=> i_A,
+--		i_D_1	=> i_B,
+--		i_S_Sub	=> s_SUB_switch,				--Turn on during testing (turn to 1 which = sub)
+--			
+--		--Outputs
+--		o_D_Sum	=> s_SUB_D_Sum,
+--		o_D_Cout=> s_SUB_D_Cout
+--	);
+
+--  SUB_or	:	or_32bit
+--    port map(
+--        i_or_A		=> s_SUB_D_Sum,
+--        i_or_B    	=> s_SUB_D_Cout,
+--        o_or_F    	=> s_SUB_or
+--    );		
+
+--	SUB_not	:	not_32bit
+--	  port map(
+--         i_not_A	=> s_SUB_D_Cout,
+--         o_not_F	=> s_SUB_not
+--	);
+
+-- ADD/SUB command to MUX2_1
+	ADDSUM_command : AddSub 
+	port map(
+		--Inputs
+		i_D_0	=> i_A,
+		i_D_1	=> i_B,
+		i_S_Sub	=> i_vector(0),
+		
+		--Outputs
+		o_D_Sum	=> s_ADDSUB_D_S,
+		o_D_Cout=> o_overflow      --NOT CURRENTLY USED. DO WE NEED IT?
+	);
+	
+-- SLL command to MUX3_1
+  SLL_command2 : shift32_left
+	port map(
+		i_barll => i_A,
+		i_swll  => i_B,				--i_B only requires 5 bits for shift amount (Will throw error if larger)
+		o_barll => s_SLL_barll
+	);
+
+-- SRA command to MUX3_1
+  SRA_command : shift32ar_right
+    port map(
+		i_barar => i_A,
+		i_swar  => i_B,
+		o_barar => s_SRA_barar
+	);
+	
+-- MUX0_0
+  MUX0_0 : mux2t1_32	
+	port map(
+		i_S 	=> i_vector(0),
+		i_D0	=> s_OR_F_invert,
+		i_D1	=> s_OR_F,
+		o_O		=> s_MUX0_0
+	);	
+	
+-- MUX1_0
+  MUX1_0 : mux2t1_32	
+	port map(
+		i_S 	=> i_vector(0),
+		i_D0	=> s_AND_F,
+		i_D1	=> s_XOR_F,
+		o_O		=> s_MUX1_0
+	);
+
+-- MUX2_0
+    MUX2_0	:	mux2t1_32	
+	port map(
+		i_S 	=> i_vector(0),
+		i_D0	=> s_SUB_not,
+		i_D1	=> s_SUB_or,
+		o_O		=> s_MUX2_0
+	);
+
+-- MUX0_1
+  MUX0_1 : mux2t1_32	
+	port map(
+		i_S 	=> i_vector(1),
+		i_D0	=> s_SLL16_barll,
+		i_D1	=> s_MUX0_0,
+		o_O		=> s_MUX0_1
+	);
+
+-- MUX1_1 
+  MUX1_1	:	mux2t1_32	
+	port map(
+		i_S 	=> i_vector(1),
+		i_D0	=> s_AND_F,
+		i_D1	=> s_MUX1_F,
+		o_O		=> s_MUX1_0
+	);
+
+-- MUX2_1
+  MUX2_1	:	mux2t1_32	
+	port map(
+		i_S 	=> i_vector(1),
+		i_D0	=> s_MUX2_0,
+		i_D1	=> s_ADDSUB_D_S,
+		o_O		=> s_MUX2_1
+	);
+
+-- MUX3_1
+  MUX3_1 : mux2t1_32	
+	port map(
+		i_S 	=> i_vector(1),
+		i_D0	=> s_SLL_barll,
+		i_D1	=> s_SRA_barar,
+		o_O		=> s_MUX3_1
+	);
+
+-- MUX0_2
+  MUX0_2 : mux2t1_32	
+	port map(
+		i_S 	=> i_vector(2),
+		i_D0	=> s_MUX0_1,
+		i_D1	=> s_MUX1_1,
+		o_O		=> s_MUX0_2
+	);
+
+-- MUX1_2
+  MUX1_2 : mux2t1_32	
+	port map(
+		i_S 	=> i_vector(2),
+		i_D0	=> s_MUX2_1,
+		i_D1	=> s_MUX3_1,
+		o_O		=> s_MUX1_2
+	);
+	
+-- MUX_F
+  MUX_F : mux2t1_32	
+	port map(
+		i_S 	=> i_vector(3),
+		i_D0	=> s_MUX0_2,
+		i_D1	=> s_MUX1_2,
+		o_O		=> o_O_F
+	);	
+
+
+
+
+
+end structural;
